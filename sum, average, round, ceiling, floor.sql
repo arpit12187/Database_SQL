@@ -14,6 +14,8 @@ where age>50;
 # average 
 select avg(salary) from employees;
 
+
+
 select avg(salary) from employees
 where department_id=2;
 
@@ -64,3 +66,21 @@ select
  floor( salary/10000) ,
  ceil(salary/10000)
  from employees;
+ 
+ # power 
+ select
+ name, 
+ age,
+ power(age,2) as age_swq,
+ sqrt(age) as age_srqt
+ from employees;
+ 
+ # log function 
+ 
+ select 
+ name,
+ salary,
+ log(salary) as n_log,
+ log10(salary) as log_10
+ from employees;
+ 
